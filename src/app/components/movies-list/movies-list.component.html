@@ -1,0 +1,20 @@
+<div class="movies-container">
+    <h3>Movies List Component</h3>
+    <table class="movies-list__table">
+      <thead>
+        <tr>
+          <td>Actor Id:</td>
+          <td>Movie Name:</td>
+          <td>Movie Rating:</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movie of _movies$ | async">
+          <td>{{ movie.actorId }}</td>
+          <td>{{ movie.name }}</td>
+          <td>{{ movie.rating }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    

@@ -1,0 +1,11 @@
+<div class="actor-container">
+    <h3>Actor Selector Component</h3>
+    <label class="actor-selector__label" for="actorSelector">
+      Choose Actor
+    </label>
+    <select #ref id="actorSelector" class="actor-selector__select" (change)="selectedActor(ref.value)">
+      <option *ngFor="let actor of _actors$ | async" [value]="actor.id">
+        {{ actor.name }}, {{ actor.age }}
+      </option>
+    </select>
+  </div>

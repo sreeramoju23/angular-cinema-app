@@ -1,0 +1,21 @@
+.movies-list__table {
+    border: 1px solid black;
+  }
+  
+  .movies-list__table > thead {
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .movies-list__table tbody > tr > td {
+    padding: 8px 16px;
+  }
+  
+  .movies-container {
+    background-color: lightgoldenrodyellow;
+    padding: 1rem;  
+  }
+  
+  .movies-container h3 {
+    text-decoration: underline;
+  }

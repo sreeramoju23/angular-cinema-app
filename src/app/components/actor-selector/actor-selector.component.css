@@ -1,0 +1,18 @@
+.actor-selector__label {
+    display: block;
+  }
+  
+  .actor-selector__select {
+    display: block;
+    margin-bottom: 32px;
+  }
+  
+  .actor-container {
+    padding: 1rem;
+    background-color: lightblue;
+    margin-bottom: 1rem;
+  }
+  
+  .actor-container h3 {
+    text-decoration: underline;
+  }
