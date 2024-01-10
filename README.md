@@ -26,3 +26,25 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # angular-cinema-app
+
+<!-- // this.actorListService.filter$.subscribe((selectedActor) => {
+    //   if (selectedActor) {
+    //     this._movies$.subscribe(dataList => {
+    //       const filteredData : Observable<Movie[]> = selectedActor ? dataList.filter(item => item.actorId == selectedActor) : dataList;
+    //       this.moviesDataService.updateMoviesByActor(filteredData);
+    //     })  
+    //     // const movies: string[] = this.filterData(selectedActor);
+    //     // this.moviesDataService.updateMoviesByActor(movies);
+    //   }
+    // });
+
+  // filterData(filter: any): string[] {
+  //    this._movies$
+  //     //.pipe(takeUntil(this.ngUnsubscribe))
+  //     .subscribe(dataList => {
+  //       const filteredData: string[] = filter ? dataList.filter(item => item.actorId === filter) : dataList;
+  //       console.log(filteredData);
+  //       return filteredData;
+  //     });
+     
+  // } -->

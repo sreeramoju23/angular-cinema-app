@@ -1,11 +1,12 @@
 import { Injectable } from "@angular/core";
 import { Movie } from "../models/movies.model";
-import { Observable, of } from "rxjs";
+import { BehaviorSubject, Observable, map, of } from "rxjs";
+import { ActorsListService } from "./actors-list.service";
 
 @Injectable()
 export class MoviesDataService {
 
-    constructor() {}
+    constructor(private actorsListService :ActorsListService) {}
 
     private Movies : Movie[] = [
         {
@@ -47,11 +48,14 @@ export class MoviesDataService {
     ];
 
     public getMoviesData():Observable<Movie[]> {
-      return of(this.Movies);
+      return this.actorsListService.filter$.pipe(
+        map((selectedActorId) => this.filterMoviesByActor(selectedActorId))
+    );
+      //return of(this.Movies);
     }
 
-    public setMoviesData(movies: Movie[]) {
-      this.Movies = movies;
-    }
+    private filterMoviesByActor(actorId: string | null): Movie[] {
+      return this.Movies.filter(movie => movie.actorId === actorId);
+  }
 
 }

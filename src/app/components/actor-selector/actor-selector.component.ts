@@ -18,9 +18,9 @@ export class ActorSelectorComponent {
     private moviesDataService: MoviesDataService) {}
 
   ngOnInit(): void {
-    this._actors$ = this._actors$.pipe(
-      map((actor) => actor.filter((r) => r.age > 35))
-    );
+    // this._actors$ = this._actors$.pipe(
+    //   map((actor) => actor.filter((r) => r.age > 35))
+    // );
   } 
   selectedActor(value: any) : void {
     this.actorDataService.setFilter(value); 
