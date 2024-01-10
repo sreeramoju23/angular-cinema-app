@@ -1,5 +1,13 @@
 # CinemaApp
 
+<!-- echo "# angular-cinema-app" >> README.md
+ git add README.md
+ git add .
+ git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/sreeramoju23/angular-cinema-app.git
+ git push -u origin main -->
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
 ## Development server
